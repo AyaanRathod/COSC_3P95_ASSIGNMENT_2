@@ -1,0 +1,21 @@
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# VS Code editor configuration
+.vscode/
+
+# Assignment-specific files to ignore
+# Copilot instructions should not be committed
+.github/copilot-instructions.md
+
+# The report will be submitted as a PDF, so the source is ignored
+opentelemetry-file-transfer/report.md
+
+# Output and data directories inside the project folder
+opentelemetry-file-transfer/server_output/
+opentelemetry-file-transfer/client_files/
+
+# Ignore any screenshots or images in the project folder
+opentelemetry-file-transfer/*.png

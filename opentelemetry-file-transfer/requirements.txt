@@ -1,0 +1,16 @@
+# --- Core Application ---
+flask
+requests
+waitress
+
+# --- OpenTelemetry Auto-Instrumentation ---
+# The main package that provides the `opentelemetry-instrument` command.
+opentelemetry-instrumentation
+
+# The distro package configures the exporter and other defaults.
+# The [otlp] extra installs the API, SDK, and OTLP exporter for us.
+opentelemetry-distro[otlp]
+
+# We also need to explicitly include instrumentors for the libraries we use.
+opentelemetry-instrumentation-flask
+opentelemetry-instrumentation-requests

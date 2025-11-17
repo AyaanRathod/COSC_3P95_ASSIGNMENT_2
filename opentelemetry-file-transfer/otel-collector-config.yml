@@ -1,0 +1,29 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+      http:
+
+exporters:
+  #logging exporter for debugging
+  logging:
+    verbosity: detailed
+  # Export traces to Jaeger
+  otlphttp/jaeger:
+    traces_endpoint: http://jaeger:4318/v1/traces #  Port: 4318
+    tls:
+      insecure: true
+
+processors:
+  batch:
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [otlphttp/jaeger, logging]
+    metrics:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [logging]
