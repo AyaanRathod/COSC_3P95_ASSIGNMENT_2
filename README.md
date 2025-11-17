@@ -4,6 +4,23 @@ This project demonstrates a client-server file transfer application instrumented
 
 ## Project Structure
 
+The repository is organized with all the application code and configuration contained within the `opentelemetry-file-transfer` directory.
+
+```
+/
+├── .gitignore
+├── README.md
+└── opentelemetry-file-transfer/
+    ├── client.py                 # The client application
+    ├── server.py                 # The Flask server application
+    ├── data_generator.py         # Script to create test files
+    ├── requirements.txt          # Python dependencies
+    ├── docker-compose.yml        # Docker configuration for the observability stack
+    ├── otel-collector-config.yml # OpenTelemetry Collector configuration
+    ├── report.md                 # The project report (ignored by Git)
+    └── screenshots/              # Directory for report screenshots
+```
+
 -   `client.py`: Sends files from the `./client_files` directory to the server.
 -   `server.py`: A Flask server that receives files and saves them to `./server_output`.
 -   `data_generator.py`: A script to create the test files.

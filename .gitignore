@@ -6,8 +6,8 @@ __pycache__/
 # VS Code editor configuration
 .vscode/
 
-# Assignment-specific files to ignore
-# Copilot instructions should not be committed
+
+# Copilot instructions ignored.
 .github/copilot-instructions.md
 
 # The report will be submitted as a PDF, so the source is ignored
