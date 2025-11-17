@@ -17,8 +17,7 @@ The repository is organized with all the application code and configuration cont
     ├── requirements.txt          # Python dependencies
     ├── docker-compose.yml        # Docker configuration for the observability stack
     ├── otel-collector-config.yml # OpenTelemetry Collector configuration
-    ├── report.md                 # The project report (ignored by Git)
-    └── screenshots/              # Directory for report screenshots
+    
 ```
 
 -   `client.py`: Sends files from the `./client_files` directory to the server.
@@ -27,8 +26,7 @@ The repository is organized with all the application code and configuration cont
 -   `requirements.txt`: Python dependencies.
 -   `docker-compose.yml`: Starts the observability backend (Collector and jaeger)
 -   `otel-collector-config.yml`: Configures the OpenTelemetry Collector.
--   `report.md`: A template for the final project report.
--   `screenshots/`: A directory to save your Jaeger and Grafana screenshots.
+
 
 ## Final Setup and Execution Instructions
 
